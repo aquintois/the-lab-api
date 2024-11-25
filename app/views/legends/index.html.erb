@@ -1,2 +1,12 @@
-<h1>Legends#index</h1>
-<p>Find me in app/views/legends/index.html.erb</p>
+<h1>Legends</h1>
+<p>List</p>
+<ul>
+  <% @legends.each do |legend| %>
+  <li>
+    <% legend.pseudo %>
+  </li>
+  <% end %>
+  <%# @legends.each do |legend| %>
+<!--    <li><%#= link_to legend.pseudo, legend %></li>-->
+  <%# end %>
+</ul>
